@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  background: hsl(276, 4%, 93%);
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+section.card {
+  background-color: hsl(0, 0%, 100%);
+  max-width: 28.1rem;
+  max-height: 40rem;
+  border-top-left-radius: 50% 20%;
+  border-top-right-radius: 50% 15%;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section img {
+  border-radius: 50% 20% / 10% 40%;
+}
+
+p {
+  width: 25rem;
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+}
+
+h1 {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 0.9rem;
+}
+
+h3 {
+  font-size: 0.9rem;
+  color: hsl(224, 23%, 55%);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.backgroundPay {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(224, 100%, 97%);
+  width: 23rem;
+  height: 3rem;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.payPlan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.plans {
+  display: flex;
+  flex-direction: column;
+  margin-right: 7rem;
+}
+
+.buttonChange {
+  font-size: 0.77rem;
+}
+
+.buttonChange:hover {
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2.5rem;
+}
+
+.payment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  width: 25rem;
+  height: 3rem;
+  background: hsl(269, 98%, 50%);
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.payment:hover {
+  opacity: 0.8;
+}
+
+.procPay:hover {
+  opacity: 0.6;
+}
+
+.cancelOrder {
+  font-size: 12px;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  cursor: pointer;
+}
+
+.cancelOrder:hover {
+  color: black;
+  opacity: 1;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 558px) {
+  section.card {
+    width: 22rem;
+    height: 32rem;
+  }
+
+  section .text img {
+    width: 22rem;
+  }
+
+  p {
+    width: 100%;
+  }
+
+  .text {
+    font-size: 13px;
+    width: 15rem;
+  }
+
+  .backgroundPay {
+    width: 18rem;
+    height: 1rem;
+  }
+
+  .buttonChange {
+    font-size: 0.6rem;
+    padding-right: auto;
+  }
+
+  .payPlan img {
+    width: 40px;
+    padding-left: auto;
+  }
+
+  .payment {
+    width: 18rem;
+    height: 2.3rem;
+  }
+}
